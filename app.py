@@ -66,7 +66,7 @@ def add_book():
     return f'{title} by {author} successfully added to the library.'
 
 
-@app.route('/books/update/<id>', methods=['GET'])
+@app.route('/books/update/<id>', methods=['PUT'])
 def update_book():
     book = Book.query.get(id)
 
